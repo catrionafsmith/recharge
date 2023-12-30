@@ -1,0 +1,156 @@
+{
+  "exercises": [
+    {
+      "name": "Get Ready to Start!",
+      "interval": 5000,
+      "about": "Ready yourself!",
+      "image": "/ready.jpeg",
+      "audio": "whoosh.mp3"
+    },
+    {
+      "name": "Jumping Jacks",
+      "interval": 30000,
+      "about": "Jumping jacks are good exercise",
+      "image": "/jacks.jpg",
+      "audio": "whoosh.mp3"
+    },
+    {
+      "name": "Change to next exercise",
+      "interval": 10000,
+      "about": "Next exercise is wall sitting",
+      "image": "/change.jpeg"
+    },
+    {
+      "name": "Wall sit",
+      "interval": 30000,
+      "about": "Build muscle by wall sitting",
+      "image": "/wallsit.jpg"
+    },
+    {
+      "name": "Change to next exercise",
+      "interval": 10000,
+      "about": "Next exercise is push ups",
+      "image": "/change.jpeg"
+    },
+    {
+      "name": "Push ups",
+      "interval": 30000,
+      "about": "Build arms by pushing up",
+      "image": "/pushup.jpeg"
+    },
+    {
+      "name": "Change to next exercise",
+      "interval": 10000,
+      "about": "Next exercise is ab crunch",
+      "image": "/change.jpeg"
+    },
+    {
+      "name": "Ab Crunch",
+      "interval": 30000,
+      "about": "Build abs with crunches",
+      "image": "/situp.jpg"
+    },
+    {
+      "name": "Change to next exercise",
+      "interval": 10000,
+      "about": "Next exercise is step up",
+      "image": "/change.jpeg"
+    },
+    {
+      "name": "Step Up",
+      "interval": 30000,
+      "about": "Get strong legs",
+      "image": "/step-ups.gif"
+    },
+    {
+      "name": "Change to next exercise",
+      "interval": 10000,
+      "about": "Next exercise is squats",
+      "image": "/change.jpeg"
+    },
+    {
+      "name": "Squats",
+      "interval": 30000,
+      "about": "Get strong legs",
+      "image": "/squats.jpg"
+    },
+    {
+      "name": "Change to next exercise",
+      "interval": 10000,
+      "about": "Next exercise is tricep dips",
+      "image": "/change.jpeg"
+    },
+    {
+      "name": "Tricep Dips",
+      "interval": 30000,
+      "about": "Get good arms",
+      "image": "/triceps.jpeg"
+    },
+    {
+      "name": "Change to next exercise",
+      "interval": 10000,
+      "about": "Next exercise is plank",
+      "image": "/change.jpeg"
+    },
+    {
+      "name": "Plank",
+      "interval": 30000,
+      "about": "Plank it",
+      "image": "/plank.jpeg"
+    },
+    {
+      "name": "Change to next exercise",
+      "interval": 10000,
+      "about": "Next exercise is high knees",
+      "image": "/change.jpeg"
+    },
+    {
+      "name": "High Knees",
+      "interval": 30000,
+      "about": "Get strong legs",
+      "image": "/high-knees.jpg"
+    },
+    {
+      "name": "Change to next exercise",
+      "interval": 10000,
+      "about": "Next exercise is lunges",
+      "image": "/change.jpeg"
+    },
+    {
+      "name": "Lunges",
+      "interval": 30000,
+      "about": "Get strong legs",
+      "image": "/lunge.png"
+    },
+    {
+      "name": "Change to next exercise",
+      "interval": 10000,
+      "about": "Next exercise is push up rotation",
+      "image": "/change.jpeg"
+    },
+    {
+      "name": "Push Up Rotation",
+      "interval": 30000,
+      "about": "Get strong legs",
+      "image": "/rotation.jpeg"
+    },
+    {
+      "name": "Change to next exercise",
+      "interval": 10000,
+      "about": "Next exercise is side plank",
+      "image": "/change.jpeg"
+    },
+    {
+      "name": "Side Plank",
+      "interval": 30000,
+      "about": "Get strong legs",
+      "image": "/sideplank.jpg"
+    },
+    {
+      "name": "Finished",
+      "interval": 30000,
+      "about": "Finished 7 minute workout!",
+      "image": "/celebrate.jpeg"
+    }
+  ]
+}
