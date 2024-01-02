@@ -41,7 +41,7 @@ function TimedCarousel() {
       <Carousel onSlide={handleSlideChange}>
         {exercises.exercises.map((exercise, index) => (
           <Carousel.Item key={index} interval={exercise.interval}>
-            <Card style={{ width: "30rem" }}>
+            <Card style={{ width: "60rem" }}>
               <Card.Img variant="top" src={exercise.image} />
               <Card.Body>
                 <Card.Title>{exercise.name}</Card.Title>

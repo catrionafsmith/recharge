@@ -108,7 +108,7 @@
       "name": "High Knees",
       "interval": 30000,
       "about": "Get strong legs",
-      "image": "/high-knees.jpg"
+      "image": "/High-knees.jpg"
     },
     {
       "name": "Change to next exercise",
@@ -131,7 +131,7 @@
     {
       "name": "Push Up Rotation",
       "interval": 30000,
-      "about": "Get strong legs",
+      "about": "Start in a standard push-up position. Begin a traditional push-up, but as you come back up, shift your weight onto your left side. Rotate your upper body and extend your right arm straight up toward the ceiling. Return to your starting position, then repeat with right side.",
       "image": "/rotation.jpeg"
     },
     {
@@ -143,7 +143,13 @@
     {
       "name": "Side Plank",
       "interval": 30000,
-      "about": "Get strong legs",
+      "about": "Hold it on the left side!",
+      "image": "/sideplank.jpg"
+    },
+    {
+      "name": "Side Plank",
+      "interval": 30000,
+      "about": "Hold it on the right side!",
       "image": "/sideplank.jpg"
     },
     {

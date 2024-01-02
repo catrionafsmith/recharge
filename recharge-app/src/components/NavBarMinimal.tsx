@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Tooltip, UnstyledButton, Stack, rem } from '@mantine/core';
+import { UnstyledButton, Tooltip, Title, rem } from '@mantine/core';
 import {
   IconHome2,
   IconGauge,
@@ -11,24 +11,7 @@ import {
 } from '@tabler/icons-react';
 import classes from './NavbarMinimal.module.css';
 
-interface NavbarLinkProps {
-  icon: typeof IconHome2;
-  label: string;
-  active?: boolean;
-  onClick?(): void;
-}
-
-function NavbarLink({ icon: Icon, label, active, onClick }: NavbarLinkProps) {
-  return (
-    <Tooltip label={label} position="right" transitionProps={{ duration: 0 }}>
-      <UnstyledButton onClick={onClick} className={classes.link} data-active={active || undefined}>
-        <Icon style={{ width: rem(20), height: rem(20) }} stroke={1.5} />
-      </UnstyledButton>
-    </Tooltip>
-  );
-}
-
-const mockdata = [
+const mainLinksMockdata = [
   { icon: IconHome2, label: 'Home' },
   { icon: IconGauge, label: 'Dashboard' },
   { icon: IconDeviceDesktopAnalytics, label: 'Analytics' },
@@ -38,23 +21,73 @@ const mockdata = [
   { icon: IconSettings, label: 'Settings' },
 ];
 
-export function NavbarMinimal() {
-  const [active, setActive] = useState(2);
+const linksMockdata = [
+  'Security',
+  'Settings',
+  'Dashboard',
+  'Releases',
+  'Account',
+  'Orders',
+  'Clients',
+  'Databases',
+  'Pull Requests',
+  'Open Issues',
+  'Wiki pages',
+];
 
-  const links = mockdata.map((link, index) => (
-    <NavbarLink
-      {...link}
+export function NavbarMinimal() {
+  const [active, setActive] = useState('Releases');
+  const [activeLink, setActiveLink] = useState('Settings');
+
+  const mainLinks = mainLinksMockdata.map((link) => (
+    <Tooltip
+      label={link.label}
+      position="right"
+      withArrow
+      transitionProps={{ duration: 0 }}
       key={link.label}
-      active={index === active}
-      onClick={() => setActive(index)}
-    />
+    >
+      <UnstyledButton
+        onClick={() => setActive(link.label)}
+        className={classes.mainLink}
+        data-active={link.label === active || undefined}
+      >
+        <link.icon style={{ width: rem(22), height: rem(22) }} stroke={1.5} />
+      </UnstyledButton>
+    </Tooltip>
+  ));
+
+  const links = linksMockdata.map((link) => (
+    <a
+      className={classes.link}
+      data-active={activeLink === link || undefined}
+      href="#"
+      onClick={(event) => {
+        event.preventDefault();
+        setActiveLink(link);
+      }}
+      key={link}
+    >
+      {link}
+    </a>
   ));
 
   return (
-    
-        <Stack justify="center" gap={0}>
+    <nav className={classes.navbar}>
+      <div className={classes.wrapper}>
+        <div className={classes.aside}>
+          <div className={classes.logo}>
+          </div>
+          {mainLinks}
+        </div>
+        <div className={classes.main}>
+          <Title order={4} className={classes.title}>
+            {active}
+          </Title>
+
           {links}
-        </Stack>
-      
+        </div>
+      </div>
+    </nav>
   );
 }
