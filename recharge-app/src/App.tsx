@@ -13,6 +13,7 @@ Routes
 } from 'react-router-dom'
 import Hamstrings from './components/Hamstrings';
 import Flexibility from './components/Flexibility';
+import ChatForm from './components/ChatForm';
 import Home from './components/Home';
 
 
@@ -72,6 +73,13 @@ function App() {
         variant="subtle"
         active
       />
+      <NavLink
+        href="/question"
+        label="Ask a Question"
+        leftSection={<IconActivity size="1rem" stroke={1.5} />}
+        variant="subtle"
+        active
+      />
       </AppShell.Navbar>
 
       <AppShell.Main>Welcome to Recharge!
@@ -80,6 +88,7 @@ function App() {
           <Route path="/7" element={<TimedCarousel/>}/>
           <Route path="/hamstrings" element={<Hamstrings/>}/>
           <Route path="/flexibility" element={<Flexibility/>}/>
+          <Route path="/question" element={<ChatForm/>}/>
         </Routes>
       </AppShell.Main>
     </AppShell>
