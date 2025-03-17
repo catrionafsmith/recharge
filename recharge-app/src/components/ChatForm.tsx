@@ -1,6 +1,5 @@
-import React from 'react';
 import { useForm } from '@mantine/form';
-import { TextInput, Button, Group } from '@mantine/core';
+import { TextInput, Button } from '@mantine/core';
 
 
 export default function ChatForm() {

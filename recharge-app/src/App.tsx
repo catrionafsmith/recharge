@@ -15,7 +15,6 @@ import Hamstrings from './components/Hamstrings';
 import Flexibility from './components/Flexibility';
 import ChatForm from './components/ChatForm';
 import Home from './components/Home';
-import NewForm from './components/NewForm';
 
 
 function App() {
@@ -81,13 +80,6 @@ function App() {
         variant="subtle"
         active
       />
-      <NavLink
-        href="/form"
-        label="New form"
-        leftSection={<IconActivity size="1rem" stroke={1.5} />}
-        variant="subtle"
-        active
-      />
       </AppShell.Navbar>
 
       <AppShell.Main>Welcome to Recharge!
@@ -97,7 +89,6 @@ function App() {
           <Route path="/hamstrings" element={<Hamstrings/>}/>
           <Route path="/flexibility" element={<Flexibility/>}/>
           <Route path="/question" element={<ChatForm/>}/>
-          <Route path="/form" element={NewForm}/>
         </Routes>
       </AppShell.Main>
     </AppShell>
