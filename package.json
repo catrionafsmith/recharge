@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@tabler/icons-react": "^2.44.0",
+    "prettier": "^3.3.3"
+  }
+}
