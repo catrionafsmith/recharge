@@ -31,6 +31,13 @@ export default function NavBarLinks() {
         variant="subtle"
         active
       />
+      <NavLink
+        href="#required-for-focus"
+        label="Ask a Question"
+        leftSection={<IconActivity size="1rem" stroke={1.5} />}
+        variant="subtle"
+        active
+      />
     </>
   );
 }
